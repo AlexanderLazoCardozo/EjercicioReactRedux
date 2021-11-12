@@ -39,7 +39,20 @@ const usuarios = [
   }
 ]
 
-const mascotas = ['Guffy', 'Roco', 'Chato', 'Negro']
+const mascotas = [
+  {
+   "nombres":'Guffy',
+  },
+  {
+    "nombres":"Roco",
+  },
+  {
+    "nombres":'Chato',
+  },
+  {
+    "nombres":'Negro',
+  },
+]
 
 app.get('/usuarios', (req, res) => {
   res.json(usuarios)

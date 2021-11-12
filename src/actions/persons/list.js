@@ -2,6 +2,7 @@ export const PERSON_LIST = 'PERSON_LIST'
 export const PERSON_LOADING = 'PERSON_LOADING'
 export const PERSON_ERROR = 'PERSON_ERROR'
 
+
 export const data = (data) => ({
   type: PERSON_LIST,
   data
@@ -16,6 +17,7 @@ export const error = (error) => ({
   type: PERSON_ERROR,
   error
 })
+
 
 export const list = () => {
   return (dispatch) => {
@@ -36,3 +38,4 @@ export const list = () => {
     .finally(() => dispatch(loading(false)))
   }
 }
+
